@@ -4,6 +4,10 @@
   "description": "Shared oxfmt and oxlint defaults",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeemyself/oxconfig.git"
+  },
   "files": [
     ".oxfmtrc.json",
     ".oxlintrc.json",
