@@ -1,8 +1,9 @@
 name: Publish package to npm
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 permissions:
@@ -25,4 +26,4 @@ jobs:
           registry-url: https://registry.npmjs.org
 
       - name: Publish to npm
-        run: npm publish --access public
+        run: npm publish
