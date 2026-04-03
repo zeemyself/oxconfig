@@ -1,16 +1,16 @@
 {
   "name": "@zeemyself/oxconfig",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Shared oxfmt and oxlint defaults",
   "license": "MIT",
   "type": "module",
   "files": [
-    ".oxtfmtrc.json",
+    ".oxfmtrc.json",
     ".oxlintrc.json",
     "README.md"
   ],
   "exports": {
-    "./oxfmt": "./.oxtfmtrc.json",
+    "./oxfmt": "./.oxfmtrc.json",
     "./oxlint": "./.oxlintrc.json"
   }
 }

@@ -2,7 +2,7 @@
 
 Shared default configuration package for:
 
-- `oxfmt` (`.oxtfmtrc.json`)
+- `oxfmt` (`.oxfmtrc.json`)
 - `oxlint` (`.oxlintrc.json`)
 
 ## Install
@@ -38,7 +38,7 @@ Add local overrides if needed:
 
 ### `oxfmt`
 
-Create/update your project's `.oxtfmtrc.json`:
+Create/update your project's `.oxfmtrc.json`:
 
 ```json
 {
@@ -46,26 +46,15 @@ Create/update your project's `.oxtfmtrc.json`:
 }
 ```
 
-If your `oxfmt` version does not support `extends`, copy the package config as your local `.oxtfmtrc.json`:
+If your `oxfmt` version does not support `extends`, copy the package config as your local `.oxfmtrc.json`:
 
 ```bash
-cp ./node_modules/@zeemyself/oxconfig/.oxtfmtrc.json ./.oxtfmtrc.json
+cp ./node_modules/@zeemyself/oxconfig/.oxfmtrc.json ./.oxfmtrc.json
 ```
-
-## Maintainer: npm publish via GitHub Actions
-
-This repo includes `.github/workflows/publish-npm.yml` to publish on:
-
-- GitHub Release published
-- Manual workflow dispatch
-
-Before publishing, add repository secret:
-
-- `NPM_TOKEN`: npm automation token with publish access for `@zeemyself/oxconfig`
 
 ## Included defaults
 
-### `.oxtfmtrc.json`
+### `.oxfmtrc.json`
 
 - `semi: false`
 - `singleQuote: true`
