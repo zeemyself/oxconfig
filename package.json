@@ -13,8 +13,29 @@
     ".oxlintrc.json",
     "README.md"
   ],
+  "peerDependencies": {
+    "oxfmt": ">=0.43.0",
+    "oxlint": ">=1.58.0"
+  },
   "exports": {
     "./oxfmt": "./.oxfmtrc.json",
     "./oxlint": "./.oxlintrc.json"
+  },
+  "scripts": {
+    "release": "release-it"
+  },
+  "release-it": {
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": false
+    },
+    "npm": {
+      "publish": false
+    }
+  },
+  "devDependencies": {
+    "release-it": "^19.2.4"
   }
 }
